@@ -1,0 +1,64 @@
+2020-08-18 10:20:06 pid:17442 Workerman[time_worker.php] start in DEBUG mode
+2020-08-18 10:21:25 pid:17627 Workerman[time_worker.php] status 
+2020-08-18 10:21:25 pid:17627 Workerman[time_worker.php] not run
+2020-08-18 10:21:30 pid:17644 Workerman[time_worker.php] start in DEBUG mode
+2020-08-18 10:23:41 pid:17983 Workerman[time_worker.php] start in DEBUG mode
+2020-08-18 10:23:44 pid:17984 Worker[17984] process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function get_row() on null in /www/wwwroot/zong_time_task/vendor/Zhishang/Order.php:64
+Stack trace:
+#0 /www/wwwroot/zong_time_task/time_worker.php(49): Zhishang\Order->autoComment(Array)
+#1 [internal function]: {closure}()
+#2 /www/wwwroot/zong_time_task/Workerman/Events/Select.php(239): call_user_func_array(Object(Closure), Array)
+#3 /www/wwwroot/zong_time_task/Workerman/Events/Select.php(282): Workerman\Events\Select->tick()
+#4 /www/wwwroot/zong_time_task/Workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#5 /www/wwwroot/zong_time_task/Workerman/Worker.php(1452): Workerman\Worker->run()
+#6 /www/wwwroot/zong_time_task/Workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#7 /www/wwwroot/zong_time_task/Workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#8 /www/wwwroot/zong_time_task/Workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#9 /www/wwwroot/zong_time_task/time_worker.php(59): Workerman\Worker::run in /www/wwwroot/zong_time_task/vendor/Zhishang/Order.php on line 64"
+2020-08-18 10:23:44 pid:17983 worker[none:17984] exit with status 65280
+2020-08-18 10:23:44 pid:17983 Workerman[time_worker.php] stopping ...
+2020-08-18 10:23:44 pid:17983 Workerman[time_worker.php] has been stopped
+2020-08-18 10:24:24 pid:18092 Workerman[time_worker.php] start in DEBUG mode
+2020-08-18 10:24:34 pid:18092 Workerman[time_worker.php] stopping ...
+2020-08-18 10:24:34 pid:18092 Workerman[time_worker.php] has been stopped
+2020-08-18 10:25:45 pid:18287 Workerman[time_worker.php] start in DEBUG mode
+2020-08-18 10:28:51 pid:18287 Workerman[time_worker.php] stopping ...
+2020-08-18 10:28:51 pid:18287 Workerman[time_worker.php] has been stopped
+2020-08-18 10:28:53 pid:18745 Workerman[time_worker.php] start in DAEMON mode
+2020-08-18 10:32:01 pid:19204 Workerman[time_worker.php] status 
+2020-08-18 10:32:06 pid:19213 Workerman[time_worker.php] reload 
+2020-08-18 10:32:06 pid:18747 Workerman[time_worker.php] reloading
+2021-11-18 18:04:08 pid:8430 Workerman[time_worker.php] start in DAEMON mode
+2021-11-18 18:05:12 pid:8602 Workerman[time_worker.php] start in DAEMON mode
+2021-11-18 18:05:44 pid:8701 Workerman[time_worker.php] start in DAEMON mode
+2021-11-18 18:05:44 pid:8701 Workerman[time_worker.php] already running
+2021-11-18 18:05:49 pid:8708 Workerman[time_worker.php] stop 
+2021-11-18 18:05:49 pid:8708 Workerman[time_worker.php] is stopping ...
+2021-11-18 18:05:49 pid:8708 Workerman[time_worker.php] stop success
+2021-11-18 18:05:53 pid:8711 Workerman[time_worker.php] start in DAEMON mode
+2021-11-18 18:10:54 pid:9451 Workerman[time_worker.php] start in DAEMON mode
+2021-11-18 18:13:43 pid:9645 Workerman[time_worker.php] start in DAEMON mode
+2021-11-19 02:30:02 pid:8605 Worker[8605] process terminated with ERROR: E_ERROR "Uncaught exception 'PDOException' with message 'SQL:select * from demo_timed_task order by dtTime asc limit 10 SQLSTATE[HY000]: General error: 1615 Prepared statement needs to be re-prepared' in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php:1772
+Stack trace:
+#0 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1830): Workerman\MySQL\Connection->execute('select * from d...', NULL)
+#1 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1853): Workerman\MySQL\Connection->query('select * from d...')
+#2 /www/wwwroot/meishangyoupin.cn/zong_time_task/time_worker.php(23): Workerman\MySQL\Connection->get_results('select * from d...')
+#3 [internal function]: {closure}()
+#4 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(239): call_user_func_array(Object(Closure), Array)
+#5 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(282): Workerman\Events\Select->tic in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php on line 1772"
+2021-11-20 02:30:02 pid:8714 Worker[8714] process terminated with ERROR: E_ERROR "Uncaught exception 'PDOException' with message 'SQL:select * from demo_timed_task order by dtTime asc limit 10 SQLSTATE[HY000]: General error: 1615 Prepared statement needs to be re-prepared' in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php:1772
+Stack trace:
+#0 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1830): Workerman\MySQL\Connection->execute('select * from d...', NULL)
+#1 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1853): Workerman\MySQL\Connection->query('select * from d...')
+#2 /www/wwwroot/meishangyoupin.cn/zong_time_task/time_worker.php(23): Workerman\MySQL\Connection->get_results('select * from d...')
+#3 [internal function]: {closure}()
+#4 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(239): call_user_func_array(Object(Closure), Array)
+#5 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(282): Workerman\Events\Select->tic in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php on line 1772"
+2021-11-25 02:30:03 pid:9454 Worker[9454] process terminated with ERROR: E_ERROR "Uncaught exception 'PDOException' with message 'SQL:select * from demo_timed_task order by dtTime asc limit 10 SQLSTATE[HY000]: General error: 1615 Prepared statement needs to be re-prepared' in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php:1772
+Stack trace:
+#0 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1830): Workerman\MySQL\Connection->execute('select * from d...', NULL)
+#1 /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php(1853): Workerman\MySQL\Connection->query('select * from d...')
+#2 /www/wwwroot/meishangyoupin.cn/zong_time_task/time_worker.php(23): Workerman\MySQL\Connection->get_results('select * from d...')
+#3 [internal function]: {closure}()
+#4 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(239): call_user_func_array(Object(Closure), Array)
+#5 /www/wwwroot/meishangyoupin.cn/zong_time_task/Workerman/Events/Select.php(282): Workerman\Events\Select->tic in /www/wwwroot/meishangyoupin.cn/zong_time_task/vendor/workerman/mysql/src/Connection.php on line 1772"
