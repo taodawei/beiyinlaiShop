@@ -1,0 +1,24 @@
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:02:26&#039;,0,0,&#039;888/888_2022080314022655384.jpg&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:02:34&#039;,0,0,&#039;888/888_2022080314023345750.png&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:05:32&#039;,0,0,&#039;888/888_2022080314053287502.png&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:06:45&#039;,0,0,&#039;888/888_2022080314064587412.jpg&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;2.50943&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;2.50943&#039;,&#039;2022-08-03 14:34:41&#039;,0,0,&#039;888/888_2022080314343182678.mp4&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:36:25&#039;,0,0,&#039;888/888_2022080314362572581.jpg&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:36:51&#039;,0,0,&#039;888/888_2022080314365186292.jpg&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-03 14:38:41&#039;,0,0,&#039;888/888_2022080314384192633.jpg&#039;)

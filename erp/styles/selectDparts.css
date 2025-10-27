@@ -1,0 +1,16 @@
+#add_lianhegj{width:480px;margin:0 auto;border:1px #ebebeb solid;border-radius:5px;background-color:#FFF}
+#add_lianhe_con{width:460px;height:400px;margin-bottom:50px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;overflow:scroll;overflow-x:hidden}
+#add_lianhe_con li{height:35px;margin-top:1px;margin-bottom:1px;cursor:pointer;position: relative;}
+.add_lianhegj_01{font-size:13px;width:437px;line-height:35px;padding-left:23px;color:#3d3d3d;background-image:url(../images/lhgj_l1_bg.jpg);background-repeat:repeat-x}
+#add_lianhe_con li span{font-size:12px;line-height:35px;color:#898989}
+#add_lianhe_con li.add_lianhegj_02 div,#add_lianhe_con li.add_lianhegj_01 div{position:absolute; right:25px;top:10px}
+.add_lianhegj_02{font-size:13px;width:405px;line-height:35px;padding-left:55px;color:#3d3d3d;background-image:url(../images/j_l.png);background-repeat:no-repeat;background-position:45px center;background-color:#f6f6f6}
+.add_lianhegj_02:hover{background-color:#eff3fa}
+.add_lianhegj_03{font-size:13px;width:405px;line-height:37px;padding-left:55px;color:#3d3d3d;padding-top:5px;padding-bottom:5px}
+.add_lianhegj_03_div{font-size:12px;width:37px;height:37px;line-height:37px;background-color:#5dbff7;color:#fff;border-radius:37px;text-align:center}
+.add_lianhegj_03_div img{width:37px;height:37px;border-radius:37px}
+.add_lianhegj_03 span{margin-left:50px;font-size:13px;line-height:37px}
+.add_lianhegj_03 span a{color:#4882f9}
+#new_title{width:100%;background-color:#6684d9;border-top-left-radius:5px;border-top-right-radius:5px}
+.new_title_01{float:left;margin-left:20px;color:#fff;font-size:16px;line-height:46px}
+.new_title_02{float:right;margin-right:20px;margin-top:15px;width:15px;height:15px;background-image:url(../images/close1.png);background-repeat:no-repeat;cursor:pointer}

@@ -1,0 +1,6 @@
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;&#039;,&#039;2022-08-04 16:18:57&#039;,0,0,&#039;888/888_2022080416185751840.jpg&#039;)
+select comId from demo_company_limit where comId=888
+insert into demo_company_limit(comId,userNum,memory,memoryUsed) value(888,0,0,&#039;0.01298&#039;)
+insert into demo_company_momery(comId,momery,dtTime,type,recordId,ossname) value(888,&#039;0.01298&#039;,&#039;2022-08-04 16:19:17&#039;,0,0,&#039;888/888_2022080416191661857.png&#039;)

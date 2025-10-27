@@ -1,0 +1,7 @@
+.topshezhi{width:198px;max-height:439px;position:absolute;z-index:999;top:35px;left:-150px;background-color:#fff;box-shadow:0 0 5px #e7e7e7;overflow-y:auto;overflow-x:hidden;padding:15px 0}
+.topshezhi ul li{padding-left:20px}
+.topshezhi_up{height:30px;line-height:30px;font-size:14px;color:#6d6d6d;cursor:pointer}
+.topshezhi_up img{vertical-align:middle;margin:0 5px}
+.topshezhi_up .topshezhi_up_biao{padding-left:25px}
+.topshezhi_down{padding-left:40px;line-height:35px}
+.topshezhi_down a{font-size:13px;color:#848484}

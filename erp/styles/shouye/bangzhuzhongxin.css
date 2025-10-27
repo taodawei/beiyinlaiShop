@@ -1,0 +1,83 @@
+@charset "utf-8";
+body{background-color:#f8f8f8;min-width:1400px}
+#foot{height:50px;background-color:#ececec}
+#foot1{width:1400px;margin:0 auto;text-align:center;line-height:50px;font-size:12px;color:#999}
+.helpcenter{width:100%;background-image:url(../../images/shouye/help_12.gif);background-position:center top;background-repeat:no-repeat}
+.helpcenter_up{width:1400px;margin:0 auto;height:329px}
+.helpcenter_up_1{padding-top:27px;height:45px;line-height:45px;font-size:16px;color:#fff}
+.helpcenter_up_1 img{vertical-align:middle;margin-right:14px}
+.helpcenter_up_1 span{display:inline-block;vertical-align:middle;margin-left:14px;width:103px;height:28px;background-color:rgba(255,255,255,.1);text-align:center;line-height:28px;font-size:16px;color:#fff}
+.helpcenter_up_1 a{color:#fff;}
+.helpcenter_up_2{margin-top:113px;margin-left:364px;width:673px;height:50px;background-color:#fff}
+.helpcenter_up_2_left{width:620px;float:left}
+.helpcenter_up_2_left input{width:600px;padding-left:10px;height:50px;border:none;background:0 0;line-height:50px;font-size:14px;color:#777}
+.helpcenter_up_2_right{width:49px;float:right;padding-top:12px}
+.helpcenter_up_2_right img{vertical-align:top}
+.helpcenter_down{width:1400px;margin:0 auto;padding:44px 0}
+.helpcenter_down_1{height:64px;text-align:center;font-size:30px;color:#000;font-weight:700}
+.helpcenter_down_2{height:114px;text-align:center}
+.helpcenter_down_2 ul li{display:inline-block;margin:0 90px}
+.helpcenter_down_2_img{height:60px}
+.helpcenter_down_2_tt{text-align:center;text-transform:uppercase}
+.helpcenter_down_2_tt a{font-size:15px;color:#666;font-weight:700}
+.helpcenter_down_2 ul li:hover .helpcenter_down_2_tt a{color:#000}
+.helpcenter_down_3{width:100%}
+.left{width:245px;float:left;background-color:#fff;border:#eeeff2 1px solid;padding:25px 0}
+.left_1{padding-bottom:50px}
+.left_1_up{height:38px;padding-left:25px;font-size:20px;color:#000;font-weight:700}
+.left_1_down{width:100%}
+.left_1_down ul li a{height:45px;display:block;padding-left:25px;line-height:45px;font-size:15px;color:#3f3f3f;position:relative}
+.left_1_down ul li ul li a{padding-left:35px;}
+.left_1_down ul li ul li ul li a{padding-left:45px;}
+.left_1_down a.menuon{background:#f2f2f2}
+.left_2{padding-bottom:30px}
+.left_3{padding-left:25px}
+.left_3_up{height:48px}
+.left_3_up a{display:block;background-image:url(../../images/shouye/help_23.gif);background-position:left top;background-repeat:no-repeat;height:40px}
+.left_3_up a:hover{background-image:url(../../images/shouye/help_24.gif)}
+.left_3_down{font-size:20px;color:#000;margin-top:20px}
+.left_3_down img{vertical-align:middle;margin-right:10px}
+.right{width:1129px;float:right;border:#eeeff2 1px solid;border-radius:7px;padding-bottom:30px;background-color:#fff}
+.helpList{padding:32px}
+.helpList ul li{height:50px;line-height:50px}
+.helpList ul li a{font-size:16px;color:#333;font-weight:700}
+.help_show{padding:30px 50px 0}
+.help_show_1{height:60px;background-image:url(../../images/shouye/help_26.png);background-position:left center;background-repeat:no-repeat;line-height:60px;padding-left:20px;font-size:16px;color:#333;font-weight:700;cursor:pointer;}
+.help_show_2{line-height:180%;font-size:14px;color:#666}
+.help_show_2 img,.help_show_2 embed,.help_show_2 iframe{max-width:100%;}
+.help_show_3_bottom{border-bottom:#eeeff2 1px solid}
+.help_show_3 table tr td{padding-left:10px}
+.help_show_4{padding-bottom:20px;font-size:13px;color:#333;font-weight:700}
+.help_show_4 a{display:inline-block;width:130px;height:35px;text-align:center;line-height:35px;font-size:16px;color:#fff;margin-left:10px}
+.help_show_4 .help_show_4_01{background-color:#3a8aff}
+.help_show_4 .help_show_4_02{background-color:#bdbbbb}
+.help_show_5{font-size:14px;color:#666}
+.help_show_6{font-size:14px;color:#666}
+.help_show_6 a{color:#3a8aff;text-decoration:underline}
+.left_1_down_jtdown{display:inline-block;background-image:url(../../images/shouye/biao_19.png);background-position:left top;background-repeat:no-repeat;width:11px;height:6px;vertical-align:middle;position:absolute;z-index:99;right:10px;top:20px;transition:.2s}
+.left_1_down_jtdown.on{-webkit-transform: rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
+.left_1_down_jtup{display:inline-block;background-image:url(../../images/shouye/biao_18.png);background-position:left top;background-repeat:no-repeat;width:11px;height:6px;vertical-align:middle;position:absolute;z-index:99;right:10px;top:20px}
+.left_3_down b{font-size:15px;color:#3f3f3f;padding-right:10px}
+.openIcon{cursor:pointer;transition:.2s}
+.openIcon.on{-webkit-transform: rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
+.fenleixiangxilist_down_right_04{padding-bottom:30px;font-size:13px;color:#8e949a;margin-top:30px;}
+.fenleixiangxilist_down_right_04 .fenleixiangxilist_down_right_04_shi{display:inline-block;vertical-align:middle;width:38px;height:22px;border:#239ef4 1px solid;border-radius:3px;text-align:center;line-height:22px;font-size:13px;color:#8e949a;margin:0 6px}
+.fenleixiangxilist_down_right_04 .fenleixiangxilist_down_right_04_fou{display:inline-block;vertical-align:middle;width:38px;height:22px;border:#239ef4 1px solid;border-radius:3px;text-align:center;line-height:22px;font-size:13px;color:#8e949a;margin:0 6px}
+.wenzhanyouyong_shi{font-size:13px;color:#8e949a;padding-top:20px}
+.wenzhanyouyong_fou{padding-top:20px}
+.wenzhanyouyong_fou_1{padding-bottom:10px;font-size:13px;color:#8e949a}
+.wenzhanyouyong_fou_2{position:relative}
+.wenzhanyouyong_fou_2_up{width:640px;height:38px;border:#cecece 1px solid}
+.wenzhanyouyong_fou_2_up_left{width:600px;float:left;line-height:38px;padding-left:10px;font-size:13px;color:#8e949a}
+.wenzhanyouyong_fou_2_up_right{width:20px;float:right;padding-top:16px;cursor:pointer}
+.wenzhanyouyong_fou_2_up_right img{vertical-align:top}
+.wenzhanyouyong_fou_2_down{width:640px;position:absolute;z-index:99;top:39px;left:0;background-color:#fff;border:#cecece 1px solid;box-shadow:2px 2px 4px #cbcaca;padding:5px 0}
+.wenzhanyouyong_fou_2_down a{height:34px;display:block;padding-left:15px;line-height:34px;font-size:13px;color:#8e949a}
+.wenzhanyouyong_fou_2_down a:hover{color:#239ef4}
+.wenzhanyouyong_fou_3{padding:15px 0;font-size:13px;color:#8e949a}
+.wenzhanyouyong_fou_3 span{color:#239ef4}
+.wenzhanyouyong_fou_3 img{vertical-align:middle}
+.wenzhanyouyong_fou_4{width:100%}
+.wenzhanyouyong_fou_4 textarea{width:620px;height:66px;border:#cecece 1px solid;padding:10px;line-height:24px;font-size:13px;color:#8e949a}
+.wenzhanyouyong_fou_5{padding-top:20px}
+.wenzhanyouyong_fou_5 a{display:inline-block;font-size:14px;color:#239ef4;width:123px;height:38px;border:#6ebff7 1px solid;border-radius:5px;text-align:center;line-height:38px}

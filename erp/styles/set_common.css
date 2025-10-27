@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{font-family:"微软雅黑","宋体";font-size:13px;margin:0 auto;padding:0;color:#333}
+*{margin:0;padding:0}
+button,dd,div,dl,dt,fieldset,form,i,img,input,label,legend,li,ol,p,select,table,td,th,tr,ul{margin:0;padding:0}
+div,li,p{line-height:20px}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:13px;font-weight:400}
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img{margin:0}
+dd,dl,dt,li,ol,ul{list-style:none}
+a img,img{border:0;padding:0;margin:0}
+a{color:#333}
+a:link{text-decoration:none}
+a:visited{text-decoration:none}
+a:hover{text-decoration:none}
+a:active{text-decoration:none}
+.pic a{padding:0;border:1px solid #fff}
+.pic a:hover{border:1px solid #d00;background:#fff4ce}
+.clearBoth{clear:both;width:100%;height:0;font-size:0;overflow:hidden;line-height:0}
+#root{width:100%;margin:0 auto;padding:0}
+.header1{width:1200px;margin:0 auto;display:table}
+.logo{height:48px;margin-top:10px;margin-left:1%;float:left}
+.nav{height:58px;margin-left:2%;float:left}
+.nav_book{background-image:url(../images/ren.png);background-repeat:no-repeat;background-position:left center;padding-left:30px;float:left;color:#d6ebff;font-size:14px;line-height:58px;filter:alpha(opacity=70);opacity:.7}
+.nav_book a:hover{background-image:url(../images/ren.png);background-repeat:no-repeat;background-position:left center;padding-left:30px;float:left;text-decoration:none;color:#fff}
+.header_right{width:170px;float:right;margin-right:1%}
+.navin{margin:0 auto;width:100%}
+.navul{LIST-STYLE-TYPE:none}
+.navul li{POSITION:relative;LINE-HEIGHT:58px;WIDTH:170px;FLOAT:left;FONT-SIZE:13px}
+.navul li a{color:#999}
+.li1{float:left;width:170px;POSITION:relative;color:#999;line-height:58px;color:#000}
+.li1 a{color:#000}
+.navul a{DISPLAY:block;FLOAT:none;COLOR:#525252}
+.navul li.first{BACKGROUND:none transparent scroll repeat 0 0}
+.list01{DISPLAY:none;BACKGROUND:#000}
+.plist{WIDTH:1150px;BACKGROUND:url(../images/pro_bg.jpg) #ccc repeat-x left bottom;HEIGHT:422px}
+.list01 a{COLOR:#525252;font-size:12px;line-height:27px}
+.navul li.navlm:hover{Z-INDEX:5000!important;POSITION:relative;width:260px;color:#ccc;text-decoration:none}
+.navul li.navlm:hover a{color:#000;text-decoration:none}
+.navul li:hover ul li a{BACKGROUND:none transp　arent scroll repeat 0 0}
+.navul li:hover dt a{BACKGROUND:#fff;color:#000;line-height:30px}
+.navul li:hover dt a:hover{color:red;line-height:30px}
+.navul li.navlm:hover .gdropdown{Z-INDEX:1000;POSITION:absolute;text-align:center;DISPLAY:block;TOP:47px;left:60px;WIDTH:100px;background-color:#FFF;border:1px #dedfe3 solid}
+.member_photo{width:44px;float:left;margin-top:7px}
+.member_photo img{width:43px;height:43px;border-radius:43px;border:1px #b9dafa solid}
+.member_name{width:100px;float:left;line-height:58px;margin-left:2%}
+.member_jiantou{width:10px;float:left;margin-left:1%;background-image:url(../images/jiantou.png);background-repeat:no-repeat;background-position:center;height:58px}
+.text_hui{color:#999}
+.text_chui{color:#666;font-size:16px;font-weight:700}
+.text_red{color:#ff4800}
+#header1{width:1200px;margin:0 auto}
+.top{width:auto;float:left;padding-left:90px;line-height:59px}
+.top a{font-size:14px;color:#353434;padding-right:30px}
+.top img{vertical-align:middle;padding-right:5px}
+.header_right{width:auto;float:right;line-height:59px;font-size:14px;color:#353434}
+.header_right img{vertical-align:middle;padding-left:5px}
+.xinxiang{width:88px;height:24px;border:#bcb7be 1px solid;border-radius:15px;float:right;margin-right:20px;margin-top:18px;text-align:center;line-height:24px;font-family:"微软雅黑","宋体";font-size:13px;color:#ff7200}
+.xinxiang img{vertical-align:middle;padding-right:5px}
+.header_right:hover .gdropdown{Z-INDEX:1000;POSITION:absolute;text-align:center;DISPLAY:block;TOP:47px;left:-20px;WIDTH:100px;background-color:#FFF;border:1px #dedfe3 solid}
+.number_03{float:left}
+.pager{padding-top:10px;padding-left:20px;float:right}
+.pager a,.pager span{font-size:14px;color:#696969;margin-right:10px}
+.con_right_foot_04 select{width:68px;height:27px;border:1px #d8d8d8 solid;margin-left:10px;margin-right:10px;border-radius:3px;padding-left:5px}
+.con_right_foot_04 a{width:50px;display:block;float:left;padding:0 5px 0 5px;border:1px #d8d8d8 solid;background-color:#FFF;height:32px;line-height:32px;margin-left:5px;margin-right:5px;text-align:center;color:#333;top:-4px;position:relative}

@@ -1,0 +1,69 @@
+<div class="con_helplist_tc" id="con_helplist_tc" data-id="0">
+    <div class="con_helplist">
+        <div class="con_helplist_1">
+            <div class="con_helplist_1_left">
+            </div>
+            <div class="con_helplist_1_right">
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+        <div class="con_helplist_2">
+            <div class="con_helplist_2_left">
+                <input type="text" id="help_keyword" placeholder="关键词搜索"/>
+            </div>
+            <div class="con_helplist_2_right">
+                <a href="javascript:searchHelp();"><img src="images/bangzhu_14.png" alt=""/></a>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+        <div class="con_helplist_3" id="con_helplist_3">
+
+        </div>
+        <div class="con_helplist_4" id="con_helplist_4">
+            <div class="loading"><img src="images/loading.gif"></div>
+        </div>
+    </div>
+    <div class="help_xiangqing" id="help_xiangqing" data-id="0">
+        <div class="help_xiangqing_1">
+        </div>
+        <div class="help_xiangqing_2" id="help_info_title"></div>
+        <div class="help_xiangqing_3">
+            <div class="help_xiangqing_3_01" id="help_info_content"></div>
+            <div class="fenleixiangxilist_down_right_04">
+                这篇文章是否对你有帮助? <a href="javascript:" class="fenleixiangxilist_down_right_04_shi">是</a>或<a href="javascript:" class="fenleixiangxilist_down_right_04_fou">否</a>
+                <div class="wenzhanyouyong_shi" style="display:none;">
+                    很高兴能帮到你！
+                </div>
+                <div class="wenzhanyouyong_fou" style="display:none;">
+                    <div class="wenzhanyouyong_fou_1">
+                        我们可以如何改进这篇文章
+                    </div>
+                    <div class="wenzhanyouyong_fou_2">
+                        <div class="wenzhanyouyong_fou_2_up">
+                            <div class="wenzhanyouyong_fou_2_up_left" id="help_fankui_title">
+                                ----  选择原因  ----
+                            </div>
+                            <div class="wenzhanyouyong_fou_2_up_right">
+                                <img src="images/bangzhu_19.png" alt="">
+                            </div>
+                            <div class="clearBoth"></div>
+                        </div>
+                        <div class="wenzhanyouyong_fou_2_down" style="display:none;">
+                            <a href="javascript:select_help('答案不准确');">答案不准确</a>
+                            <a href="javascript:select_help('答案有点令人困惑');">答案有点令人困惑</a>
+                            <a href="javascript:select_help('我不喜欢这个解决方案');">我不喜欢这个解决方案</a>
+                            <a href="javascript:select_help('其他');">其他</a>
+                        </div>
+                    </div>
+                    <div class="wenzhanyouyong_fou_4">
+                        <textarea id="help_fankui_content" placeholder="你在寻找什么信息？"></textarea>
+                    </div>
+                    <div class="wenzhanyouyong_fou_5">
+                        <a href="javascript:tijiao_help_fankui();">提交反馈</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="help_bg" onclick="hide_help();"></div>

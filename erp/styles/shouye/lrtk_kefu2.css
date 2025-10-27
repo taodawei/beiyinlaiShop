@@ -1,0 +1,15 @@
+@charset "utf-8";
+#leftsead{width:35px;height:150px;position:fixed;bottom:0px;right:0;z-index:1000000000}
+*html #leftsead{margin-top:258px;position:absolute;top:expression(eval(document.documentElement.scrollTop))}
+#leftsead li{width:35px;height:35px}
+#leftsead li img{float:right;width:35px;}
+#leftsead li a{height:35px;float:right;display:block;min-width:47px;max-width:161px}
+#leftsead li a .shows{display:block}
+#leftsead li a .hides{margin-right:-143px;cursor:pointer;cursor:hand}
+#leftsead li a.youhui .hides{display:none;position:absolute;right:143px}
+#leftsead li a.youhui .2wm{display:none;position:absolute;right:143px}
+#p2{width:92px;background-color:#569de2;height:33px;margin-left:47px;border:1px solid #569de2;text-align:center;line-height:33px}
+#p3{width:92px;background-color:#EC9890;height:33px;margin-left:47px;border:1px solid #E6776C;text-align:center;line-height:33px}
+#p4{width:92px;background-color:#f7b944;height:33px;margin-left:47px;border:1px solid #f7b944;text-align:center;line-height:33px}
+#p5{width:92px;background-color:#0173CF;height:33px;margin-left:47px;border:1px solid #0173CF;text-align:center;line-height:33px}
+#p1{width:47px;height:49px;float:left}

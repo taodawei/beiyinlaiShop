@@ -1,0 +1,75 @@
+@charset "utf-8";
+#header{height:75px;background-color:#eff4f8;padding:0 5%}
+.header_up{padding:14px 0}
+.header_up_left{width:auto;float:left;font-size:16px;color:#58666e;font-weight:700}
+.header_up_left img{vertical-align:middle;margin-right:16px}
+.header_up_right{width:auto;float:right;height:48px}
+.header_up_right_01{width:140px;float:left;line-height:48px;position:relative;}
+.header_up_right_01 img{vertical-align:middle}
+.header_up_right_01 .header_up_right_01_img1{border-radius:100%;border:#d9dde1 2px solid;margin-right:10px;width:30px;height:30px;}
+.header_up_right_02{width:82px;float:left;line-height:48px;font-size:14px;color:#424e67}
+.header_up_right_02 img{vertical-align:middle;margin-right:4px}
+.header_up_right_03{width:auto;float:left;line-height:48px;font-size:14px;color:#424e67}
+.header_up_right_03 a{color:#424e67;padding:0 6px}
+#cont{width:100%;overflow:hidden;}
+.cont_1{background-image:url(../../images/shouye/qiyerenzheng_15.jpg);background-position:center top;background-repeat:no-repeat;height:174px}
+.cont_11{width:1200px;margin:0 auto;padding-top:48px}
+.cont_1_left{width:444px;float:left;padding-left:40px}
+.cont_1_left_01{height:57px;font-size:35px;color:#fff}
+.cont_1_left_01 span{font-size:15px;color:#fff}
+.cont_1_left_02{width:100%}
+.cont_1_left_02 ul li{float:left;margin-right:10px}
+.cont_1_right{width:auto;float:right;padding-right:40px;padding-top:30px;text-align:right}
+.cont_1_right a{font-size:14px;color:#fff}
+.cont_1_right img{vertical-align:top;margin-bottom:10px}
+.cont_2{padding-top:49px;width:1200px;margin:0 auto;height:464px}
+.cont_2_left{width:auto;float:left;padding-left:100px}
+.cont_2_left img{vertical-align:top}
+.cont_2_right{width:642px;float:right}
+.cont_2_right_01{height:76px;line-height:76px;font-size:20px;color:#323232}
+.cont_2_right_01 b{font-size:26px;color:#323232}
+.cont_2_right_01 span{font-size:28px}
+.cont_2_right_02{padding:20px 0;font-size:15px;color:#a8aaac;line-height:28px}
+.cont_2_right_02 h2{font-size:20px;color:#323232;padding-bottom:10px}
+.cont_3{background-image:url(../../images/shouye/qiyerenzheng_21.gif);background-position:center top;background-repeat:no-repeat;height:624px}
+.cont_33{width:1200px;margin:0 auto;padding-top:80px}
+.cont_3_up{height:80px;font-size:20px;color:#323232}
+.cont_3_up b{font-size:26px;color:#323232}
+.cont_3_up span{font-size:28px}
+.cont_3_down{width:100%}
+.cont_3_down ul{width:1340px}
+.cont_3_down ul li{float:left;padding-right:140px;width:293px}
+.cont_3_down_01{text-align:center}
+.cont_3_down_02{padding-top:33px;font-size:15px;color:#a8aaac;line-height:25px}
+.cont_3_down_02 h2{font-size:16px;color:#323232;padding-bottom:10px}
+.cont_4{padding-top:42px;width:1200px;margin:0 auto;height:434px}
+.cont_4_left{width:711px;float:left;padding-left:44px;padding-top:44px}
+.cont_4_left_1{height:88px;font-size:20px;color:#323232;line-height:30px}
+.cont_4_left_1 b{font-size:26px;color:#323232}
+.cont_4_left_1 span{font-size:28px}
+.cont_4_left_2{font-size:18px;color:#323232;line-height:79px}
+.cont_4_right{width:350px;float:right}
+.cont_5{padding:40px 0 70px;background-color:#ecf7fc}
+.cont_55{width:1200px;margin:0 auto}
+.cont_5_up{height:70px;padding-left:10px}
+.cont_5_up b{font-size:26px;color:#323232}
+.cont_5_down{width:100%}
+.cont_5_down ul li{float:left;width:300px;height:260px;text-align:center;font-size:16px;color:#323232}
+.cont_5_down ul li img{vertical-align:top;margin-bottom:18px}
+.cont_5_down_line{background-image:url(../../images/shouye/qiyerenzheng_27.gif);background-position:right center;background-repeat:no-repeat}
+#ewmimg{position:absolute;top:20px;right:0px;z-index:100;display:none;}
+.openIcon{cursor:pointer;transition:.2s}
+.openIcon.on{-webkit-transform: rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);}
+.header_right_01_xiangxi{width:auto;position:absolute;z-index:999;top:44px;left:-10px}
+.header_right_01_xiangxi_01{width:20px;height:10px;background-image:url(../../images/shouye/jiantou_11.png);background-position:left top;background-repeat:no-repeat;margin-left:20px}
+.header_right_01_xiangxi_02{width:298px;border:#ececec 1px solid;border-radius:6px;background-color:#fff;padding-bottom:10px;border-top:none}
+.header_right_01_xiangxi_02_1{padding:16px 15px 20px;background-color:#3a8aff;border-radius:6px 6px 0 0}
+.header_right_01_xiangxi_02_1_img{width:75px;float:left}
+.header_right_01_xiangxi_02_1_img img{border:#3976cb 5px solid;border-radius:100%;width:45px}
+.header_right_01_xiangxi_02_1_tt{width:auto;float:left;font-size:14px;color:#fff}
+.header_right_01_xiangxi_02_1_tt h2{font-size:15px;color:#fff;line-height:33px}
+.header_right_01_xiangxi_02_1_tt h2 b{font-size:15px;color:#fff}
+.header_right_01_xiangxi_02_2{padding:18px 24px}
+.header_right_01_xiangxi_02_2 span{display:inline-block;width:92px;height:27px;background-color:#f8645c;border-radius:22px;text-align:center;line-height:27px;font-size:14px;color:#fff}
+.header_right_01_xiangxi_02_3{padding:0 24px}
+.header_right_01_xiangxi_02_3 a{font-size:13px;color:#505b72;line-height:40px;display:block}

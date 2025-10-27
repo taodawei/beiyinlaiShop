@@ -1,0 +1,186 @@
+<?
+global $db,$request;
+$comId = (int)$_SESSION[TB_PREFIX.'comId'];
+if(is_file("../cache/product_set_$comId.php")){
+    $product_set = json_decode(file_get_contents("../cache/product_set_$comId.php"));
+}else{
+    $product_set = $db->get_row("select * from demo_product_set where comId=$comId");
+}
+$fenbiao = getFenBiao($comId,20);
+$startTime = $request['startTime'];
+$endTime = $request['endTime'];
+$orderNum = $db->get_row("select count(*) as orderNum,sum(price) as priceNum from demo_caigou where comId=$comId and status=1".(!empty($startTime)?" and dtTime>='$startTime 00:00:00'":'').(!empty($endTime)?" and dtTime<='$endTime 23:59:59'":''));
+$pdtNum = $db->get_var("select sum(num) from demo_caigou_detail$fenbiao where comId=$comId and status=1".(!empty($startTime)?" and dtTime>='$startTime 00:00:00'":'').(!empty($endTime)?" and dtTime<='$endTime 23:59:59'":''));
+$orderNum->orderNum=empty($orderNum->orderNum)?0:$orderNum->orderNum;
+$orderNum->priceNum=empty($orderNum->priceNum)?0:$orderNum->priceNum;
+$orderNum->priceNum = getXiaoshu($orderNum->priceNum,2);
+if(empty($pdtNum))$pdtNum=0;
+$pdtNum = getXiaoshu($pdtNum,$product_set->number_num);
+$page = empty($request['page'])?1:(int)$request['page'];
+$limit = empty($_COOKIE['caigouh3PageNum'])?10:$_COOKIE['caigouh3PageNum'];
+?>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><?=$supplier->title?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <link href="styles/common.css" rel="stylesheet" type="text/css">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/supplier.css" rel="stylesheet" type="text/css">
+    <link href="layui/css/layui.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <style>
+        .layui-table-body tr{height:50px}
+        .layui-table-view{margin:10px;}
+        td[data-field="title"] div,td[data-field="sn"] div,td[data-field="key_vals"] div{height:auto;line-height:20px;white-space:normal;word-break:break-all;max-height:60px;overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div><a href="<?=urldecode($request['url'])?>"><img src="images/back.gif" /></a></div>
+        <div>采购总汇</div>
+    </div>
+    <div class="cont">
+        <div class="operate">
+            <div class="splist_up_01_left_02">
+                <div class="splist_up_01_left_01_up">
+                    <span>按商品</span> <img src="images/biao_20.png"/>
+                </div>
+                <div class="splist_up_01_left_02_down">
+                    <ul>
+                        <li>
+                            <a href="javascript:" onclick="selectType(0,1);">按供应商</a>
+                        </li>
+                        <li>
+                            <a href="javascript:" onclick="selectType(0,2);">按明细</a>
+                        </li>
+                        <li>
+                            <a href="javascript:" onclick="selectType(0,3);">按商品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sprukulist_01">
+                <div class="sprukulist_01_left">
+                    <span id="s_time1"><?=empty($startTime)?'选择日期':$startTime?></span> <span>~</span> <span id="s_time2"><?=empty($endTime)?'选择日期':$endTime?></span>
+                </div>
+                <div class="sprukulist_01_right">
+                    <img src="images/biao_76.png"/>
+                </div>
+                <div class="clearBoth"></div>
+                <div id="riqilan" style="position:absolute;top:35px;width:550px;height:330px;display:none;left:-1px;z-index:99">
+                    <div id="riqi1" style="float:left;width:272px;"></div><div id="riqi2" style="float:left;width:272px;"></div>
+                </div>
+            </div>
+            <div class="export">
+                <a href="?m=system&s=caigou_huizong&a=daochuOrders3" onclick="daochu();" target="_blank" id="daochuA">导出</a>
+            </div>
+        </div>
+        <div class="mun">
+            <ul>
+                <li style="background-color:#ff8382;">
+                    <div class="b_num" id="price1">
+                        <?=$orderNum->orderNum?>
+                    </div>
+                    <div class="mun_tt">
+                        采购单总数
+                    </div>
+                </li>
+                <li style="background-color:#52ade6;">
+                    <div class="b_num" id="price2">
+                        <?=$pdtNum?>
+                    </div>
+                    <div class="mun_tt">
+                        采购商品数
+                    </div>
+                </li>
+                <li style="background-color:#af99e8; margin-right:0px; float:right;">
+                    <div class="b_num" id="price3">
+                        <?=$orderNum->priceNum?>
+                    </div>
+                    <div class="mun_tt">
+                        采购总金额
+                    </div>
+                </li>
+            </ul>
+            <div class="clearBoth"></div>
+        </div>
+        <div class="purchase_list2" style="width:100%;position:relative;">
+            <table id="product_list" lay-filter="product_list"></table>
+        </div>
+        <div class="clearBoth"></div>
+    </div>
+</div>
+<input type="hidden" id="nowIndex" value="">
+    <input type="hidden" id="startTime" value="<?=$startTime?>">
+    <input type="hidden" id="endTime" value="<?=$endTime?>">
+    <input type="hidden" id="order1" value="<?=$order1?>">
+    <input type="hidden" id="order2" value="<?=$order2?>">
+    <input type="hidden" id="page" value="<?=$page?>">
+    <input type="hidden" id="selectedIds" value="">
+    <input type="hidden" id="supplierId" value="<?=$id?>">
+    <input type="hidden" id="url" value="<?=urlencode($request['url'])?>">
+    <script type="text/javascript">
+        var productListTalbe;
+        layui.use(['laydate', 'laypage','table','form'], function(){
+          var laydate = layui.laydate
+          ,laypage = layui.laypage
+          ,table = layui.table
+          ,form = layui.form
+          ,load = layer.load()
+          laydate.render({
+            elem: '#riqi1'
+            ,show: true
+            ,position: 'static'
+            ,min: '2018-01-01'
+            ,max: '<?=date("Y-m-d")?>'
+            <?=empty($startTime)?'':",value:'$startTime'"?>
+            ,btns: []
+            ,done: function(value, date, endDate){
+                $("#s_time1").html(value);
+                $("#startTime").val(value);
+            }
+          });
+          laydate.render({
+            elem: '#riqi2'
+            ,show: true
+            ,position: 'static'
+            <?=empty($endTime)?'':",value:'$endTime'"?>
+            ,min: '2018-01-01'
+            ,max: '<?=date("Y-m-d")?>'
+            ,btns: ['confirm']
+            ,done: function(value, date, endDate){
+                $("#s_time2").html(value);
+                $("#endTime").val(value);
+            }
+          });
+          $(".laydate-btns-confirm").click(function(){
+            $("#riqilan").slideUp(200);
+            rerenderPrice();
+            reloadTable(0);
+          });
+          productListTalbe = table.render({
+            elem: '#product_list'
+            ,height: "full-300"
+            ,url: '?m=system&s=caigou_huizong&a=getOrders3&id=<?=$id?>'
+            ,page: {curr:<?=$page?>}
+            ,limit:<?=$limit?>
+            ,cols: [[{field:'sn',title:'商品编码',width:150},{field:'title',title: '商品名称',width:250,style:"height:auto;line-height:22px;white-space:normal;"},{field: 'key_vals', title: '商品规格',width:250,style:"height:auto;line-height:22px;white-space:normal;"},{field:'num',title:'采购数量',width:90},{field:'units',title:'单位',width:90},{field:'price',title:'小计',width:100}]]
+            ,where:{
+                startTime:'<?=$startTime?>',
+                endTime:'<?=$endTime?>'
+            },done: function(res, curr, count){
+                $("#page").val(curr);
+                layer.closeAll('loading');
+              }
+          });
+        });
+    </script>
+    <script type="text/javascript" src="js/caigou_huizong_orders1.js"></script>
+    <? require('views/help.html');?>
+</body>
+</html>
