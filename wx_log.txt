@@ -1,0 +1,135 @@
+15:47:45 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a69b3Ss36Xr0Jd3xqp8OzlAw]]></FromUserName>
+<CreateTime>1665647265</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-50-3992]]></EventKey>
+<Ticket><![CDATA[gQGc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeXFRbkZNbGRjcUgxMDAwME0wN0wAAgQNvUdjAwQAAAAA]]></Ticket>
+</xml>
+15:47:45 responseText 5555555555555:https://api.weixin.qq.com/sns/userinfo?access_token=61_r0TzFmuos7A8CHd0jKMjNNm9lhq4cXacHYnHHB3h81GbEhI4iuwnBElkAzwDg9JUOazBbYYFL0wNSnIC-jjr6-aWiTD0YX3BApWcU-Rgs22g_ypZOfNZUMhoYxt8hMge8F350OYfJn9BpbjuDBBaABANLL&openid=olY0a69b3Ss36Xr0Jd3xqp8OzlAw&lang=zh_CN
+15:47:45 responseText 5555555555555:null
+15:47:45 responseText :2222222
+17:56:41 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1665655000</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+17:56:41 responseText :2222222
+18:48:06 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a69b3Ss36Xr0Jd3xqp8OzlAw]]></FromUserName>
+<CreateTime>1665658086</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-50-3992]]></EventKey>
+<Ticket><![CDATA[gQGc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeXFRbkZNbGRjcUgxMDAwME0wN0wAAgQNvUdjAwQAAAAA]]></Ticket>
+</xml>
+18:48:06 responseText :2222222
+19:02:22 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a69b3Ss36Xr0Jd3xqp8OzlAw]]></FromUserName>
+<CreateTime>1665658942</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-50-3992]]></EventKey>
+<Ticket><![CDATA[gQGc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeXFRbkZNbGRjcUgxMDAwME0wN0wAAgQNvUdjAwQAAAAA]]></Ticket>
+</xml>
+19:02:22 responseText :2222222
+08:44:35 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1665708275</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-50-3992]]></EventKey>
+<Ticket><![CDATA[gQGc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeXFRbkZNbGRjcUgxMDAwME0wN0wAAgQNvUdjAwQAAAAA]]></Ticket>
+</xml>
+08:44:35 responseText :2222222
+08:44:46 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1665708286</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+17:13:01 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1665738781</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[qrscene_productshare-50-3992]]></EventKey>
+<Ticket><![CDATA[gQGc8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeXFRbkZNbGRjcUgxMDAwME0wN0wAAgQNvUdjAwQAAAAA]]></Ticket>
+</xml>
+17:13:01 responseText :2222222
+14:48:05 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1666075685</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-360-3992]]></EventKey>
+<Ticket><![CDATA[gQET8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydE4yM0ZlbGRjcUgxMDAwMDAwN1IAAgSKQ05jAwQAAAAA]]></Ticket>
+</xml>
+14:48:06 responseText :2222222
+09:26:21 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1666142781</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-360-3992]]></EventKey>
+<Ticket><![CDATA[gQET8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydE4yM0ZlbGRjcUgxMDAwMDAwN1IAAgSKQ05jAwQAAAAA]]></Ticket>
+</xml>
+09:26:21 responseText :2222222
+09:31:19 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6-UTTW8iHCfcsmPH43euzXk]]></FromUserName>
+<CreateTime>1666143078</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-360-3992]]></EventKey>
+<Ticket><![CDATA[gQET8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydE4yM0ZlbGRjcUgxMDAwMDAwN1IAAgSKQ05jAwQAAAAA]]></Ticket>
+</xml>
+09:31:19 responseText :2222222
+14:23:49 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6wbD8yh-erEgM_Y2h5v1FpY]]></FromUserName>
+<CreateTime>1666333429</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[qrscene_productshare-360-3992]]></EventKey>
+<Ticket><![CDATA[gQET8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAydE4yM0ZlbGRjcUgxMDAwMDAwN1IAAgSKQ05jAwQAAAAA]]></Ticket>
+</xml>
+14:23:49 responseText 5555555555555:https://api.weixin.qq.com/sns/userinfo?access_token=62_yLo9w9w50KlP8jAI6bMTUTN4gctKvdojVJswEWIwMl0Wx7Vw5hxowyzg6S1hXu8ZWCPT-Z6Y6CEa5MpACGBk8-gJ05ZdnCEsEXZVQu8YIOZ-fGZxJa8yGGPmv0pz2gtDUHs0cpp5a5FPtoVjWXBiAJAJKO&openid=olY0a6wbD8yh-erEgM_Y2h5v1FpY&lang=zh_CN
+14:23:49 responseText 5555555555555:null
+14:23:49 responseText :2222222
+14:27:03 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6wbD8yh-erEgM_Y2h5v1FpY]]></FromUserName>
+<CreateTime>1666333623</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-360-3994]]></EventKey>
+<Ticket><![CDATA[gQH97zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyRHg5dkZ1bGRjcUgxMDAwMDAwN2kAAgQsTE5jAwQAAAAA]]></Ticket>
+</xml>
+14:27:04 responseText 5555555555555:https://api.weixin.qq.com/sns/userinfo?access_token=62_KCL3l0PyKaE7BRL5boOfkl1GsVKjjxCas7rNX_Ta7mBXQjwHXeLHe-JS_VejgM3FpfKPkMIEw983Sgx4xwBwt-gx-QE-xXrNEnfxmUnftE3wp_lTZGJWgNq-VgnMmiLJDUzdvsn64UKUTzMrPORgAHALKN&openid=olY0a6wbD8yh-erEgM_Y2h5v1FpY&lang=zh_CN
+14:27:04 responseText 5555555555555:null
+14:27:04 responseText :2222222
+14:59:50 R 
+<xml><ToUserName><![CDATA[gh_d5cccf2b521a]]></ToUserName>
+<FromUserName><![CDATA[olY0a6wbD8yh-erEgM_Y2h5v1FpY]]></FromUserName>
+<CreateTime>1666335590</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[productshare-360-3994]]></EventKey>
+<Ticket><![CDATA[gQH97zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyRHg5dkZ1bGRjcUgxMDAwMDAwN2kAAgQsTE5jAwQAAAAA]]></Ticket>
+</xml>
+14:59:51 responseText 5555555555555:https://api.weixin.qq.com/sns/userinfo?access_token=62_Rp7GYgqdh1ssLJ5n5adyDDmVM9QtpS6BH_FsK28Tixut5kT3PcRe7vYe1S_K3oFdlIgYqlLIj44B0I6gckUxTP-_SGm3JxadDmN2m13FbEI-7GvNRR9BkZI44WelU6d6t0tlLhIXctHdItgXZIGjAEACLJ&openid=olY0a6wbD8yh-erEgM_Y2h5v1FpY&lang=zh_CN
+14:59:51 responseText 5555555555555:null
+14:59:51 responseText :2222222

@@ -1,0 +1,2 @@
+{"appid":"wx21307f77a8ed295d","err_code":"NOTENOUGH","err_code_des":"基本账户余额不足，请充值后重新发起","mch_id":"1622625033","nonce_str":"ma6Jc2XlbAQw7kEJ","result_code":"FAIL","return_code":"SUCCESS","return_msg":"OK","sign":"D0DBA681D312D7A19755821AFA684EC1"}
+{"appid":"wxc0e123bec52dd511","err_code":"NOTENOUGH","err_code_des":"基本账户余额不足，请充值后重新发起","mch_id":"1622625033","nonce_str":"9cboBARfZPPeDkbL","result_code":"FAIL","return_code":"SUCCESS","return_msg":"OK","sign":"7FFB1347BC0A46F3AC66C07610326D28"}

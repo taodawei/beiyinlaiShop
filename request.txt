@@ -1,0 +1,1 @@
+select productId,min(id) as inventoryId,min(price_sale) as price_sale,sum(orders) as orders,title,dtTime,image,price_market,comId,ordering from demo_product_inventory where comId=1009 and fenleiId<>387  and status=1 and zstatus=1 group by productId order by ordering desc,id desc limit 0,3

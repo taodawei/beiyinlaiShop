@@ -1,0 +1,15 @@
+{
+    "require": {
+        "workerman/mysql": "^1.0"
+    },
+    "autoload": {
+    	"files": [
+            "config/dt-config.php",
+            "config/dt-service.php",
+            "inc/service_func.php"
+        ],
+        "psr-4": {
+            "Zhishang\\": "vendor/Zhishang/"
+        }
+    }
+}
