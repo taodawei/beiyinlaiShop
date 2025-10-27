@@ -1,0 +1,20 @@
+193.112.208.70
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+
+</title></head>
+<body>
+    <form method="post" action="./GetIp.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8REkKPgMjbTOef3qbCha3XH8P65iJ4gpTDnZ3kviTx3S9UaNO1CTPsAR5+iTyWq1OPN4nj2xwGaZW9rG5t98FiXNE8YJSnCfjiZZJINQ6Og=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BB51E318" />
+    <div>
+    
+    </div>
+    </form>
+</body>
+</html>
+--20==========
