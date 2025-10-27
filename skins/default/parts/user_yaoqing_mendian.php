@@ -1,0 +1,88 @@
+<?
+global $db;
+$userId = (int)$_SESSION[TB_PREFIX.'user_ID'];
+$share_url = 'https://'.$_SERVER['HTTP_HOST'].'/index.php?p=1&a=ruzhu&tuijianren='.$userId;
+$fenbiao = getYzFenbiao($userId,20);
+$nums = $db->get_var("select count(*) from mendian where tuijianren=$userId");
+$money = $db->get_var("select sum(money) from user_liushui$fenbiao where userId=$userId and type=2 and remark='盟商奖励'");
+$user = $db->get_row("select nickname,image from users where id=$userId");
+?>
+<style type="text/css">
+    html,body,.sousuo{height:100%}
+</style>
+<div class="sousuo" style="background: url(/skins/default/images/dianpuyaoqing_1.gif) center top no-repeat; background-size:cover; background-color:#f34f4d;">
+    <div class="wode_1">
+        邀请商家入驻
+        <div class="wode_1_left" onclick="go_prev_page();">
+            <img src="/skins/default/images/sousuo_1.png" />
+        </div>
+        <div class="wode_1_tuanzhangyaoqing" onclick="share();">
+            <img src="/skins/default/images/pintuanshangpinye_14.png" />
+        </div>
+    </div>
+    <div class="tuanzhangyaoqing">
+        <div class="tuanzhangyaoqing_1">
+            <ul>
+                <li>
+                    <a >
+                        <div class="tuanzhangyaoqing_1_img">
+                            <img src="/skins/default/images/tuanzhangyaoqing_1.png" /> 
+                        </div>
+                        <div class="tuanzhangyaoqing_1_tt">
+                            <h2>成功邀请商家</h2><?=$nums?>个
+                        </div>
+                        <div class="clearBoth"></div>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <div class="tuanzhangyaoqing_1_img">
+                            <img src="/skins/default/images/tuanzhangyaoqing_11.png" /> 
+                        </div>
+                        <div class="tuanzhangyaoqing_1_tt">
+                            <h2>累计赚取返利</h2><?=empty($money)?0:$money?>元
+                        </div>
+                        <div class="clearBoth"></div>
+                    </a>
+                </li>
+                <div class="clearBoth"></div>
+            </ul>
+        </div>
+        <div class="tuanzhangyaoqing_2">
+            <img src="/skins/default/images/dianpuyaoqing_11.gif" />
+        </div>
+        <div class="tuanzhangyaoqing_3">
+            <div class="tuanzhangyaoqing_3_up">
+                <a >返利规则</a>
+            </div>
+            <div class="tuanzhangyaoqing_3_down">
+                1.邀请商家入驻平台<br><br>
+                2.商家审核通过后，您将获得商家每笔实际收入金额的返利
+            </div>
+        </div>
+        <div class="tuanzhangyaoqing_4">
+            <a href="javascript:" onclick="share();">立即邀请</a>
+        </div>
+    </div>
+</div>
+<div class="fenxiang_tc" id="fenxiang_tc" onclick="$('#fenxiang_tc').hide();" style="display:none;z-index:997">
+    <div class="bj"></div>
+    <div class="fenxiangdiv">
+        <img src="/skins/default/images/share.png" width="90%">
+    </div>
+</div>
+<script type="text/javascript">
+    var share_url = '<?=$share_url?>';
+    var share_title = '<?=$user->nickname?>邀你加入一指围城开通你的店铺！';
+    var share_img = '<?=ispic($user->image,'/skins/default/images/wode_1.png')?>';
+    var share_desc = '';
+    var userId = <?=$userId?>;
+    $(function(){
+        var url = window.location.href;
+        url = encodeURIComponent(url);
+        WeChat(url,share_url,share_title,share_img,share_desc,0);
+    });
+    function share(){
+        $('#fenxiang_tc').show();
+    }
+</script>
